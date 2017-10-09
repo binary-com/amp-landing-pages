@@ -1,0 +1,41 @@
+.ampTabContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tabHeader {
+    margin-bottom: 30px;
+}
+
+.tabButton[selected] {
+    border-bottom: 3px solid #2b3050;
+}
+
+.tabButton {
+    width: 20%;
+    list-style: none;
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 2px solid #DEDEDE;
+}
+
+.tabContent {
+    display: none;
+    width: 100%;
+    order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
+}
+
+.tabSubContent {
+    flex: 4 auto;
+    width: 50%;
+    text-align: left;
+}
+
+.tabButton[selected]+.tabContent {
+    display: flex;
+}
+
+amp-selector [option][selected] {
+    outline: 1px solid rgba(255,255,255,0);
+}
