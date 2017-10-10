@@ -25,7 +25,10 @@
 }
 
 .tabContent {
-    display: none;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
     width: 100%;
     order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
 }
@@ -37,7 +40,10 @@
 }
 
 .tabButton[selected]+.tabContent {
-    display: flex;
+    height: unset;
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 amp-selector [option][selected] {
@@ -58,6 +64,9 @@ amp-selector [option][selected] {
     }
     .tabButton[selected]+.tabContent, .tabContent {
         display: block;
+        opacity: 1;
+        visibility: visible;
+        height: unset;
         padding-bottom: 20px;
         border-bottom: 2px solid #DEDEDE;
         &:last-child{
