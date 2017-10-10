@@ -1,0 +1,81 @@
+.ampTabContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tabHeader {
+    margin-bottom: 30px;
+}
+
+.tabButton[selected] {
+    border-bottom: 3px solid #2b3050;
+}
+
+.no-outline:focus {
+    outline: none;
+}
+
+.tabButton {
+    width: 20%;
+    list-style: none;
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 2px solid #DEDEDE;
+}
+
+.tabContent {
+    display: none;
+    width: 100%;
+    order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
+}
+
+.tabSubContent {
+    flex: 4 auto;
+    width: 50%;
+    text-align: left;
+}
+
+.tabButton[selected]+.tabContent {
+    display: flex;
+}
+
+amp-selector [option][selected] {
+    outline: 1px solid rgba(255,255,255,0);
+}
+
+.text-padding-60 {
+    padding: 0px 60px;
+}
+
+.bottom-desc {
+    border-bottom: 2px solid #DEDEDE;
+}
+
+@media (max-width: 767px) {
+    .tabButton {
+        display: none;
+    }
+    .tabButton[selected]+.tabContent, .tabContent {
+        display: block;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #DEDEDE;
+        &:last-child{
+            border: 0;
+        }
+    }
+    .tabSubContent {
+        width: 100%;
+        text-align: center;
+    }
+    .text-padding-60 {
+        padding: unset;
+    }
+    .bottom-desc {
+        h3 {
+            color: #fff;
+        }
+        background-color: #2A3052;
+        border: 0;
+    }
+}

@@ -1,66 +1,68 @@
-<div class = "row">
-    <div class="col" align = "center">
-        <h2>Trade in the world’s financial markets</h2>
+<div class = "container">
+    <div class = "row">
+        <div class="col" align = "center">
+            <h2>Trade in the world’s financial markets</h2>
+        </div>
     </div>
-</div>
-<div class = "row">
-    <div class = "col-12">
-        <amp-selector role="tablist" layout="container" class="ampTabContainer">
-          <div role="tab" class="tabButton tabHeader  no-outline" selected option="a"><h3>Binary Options</h3></div>
-          <div role="tabpanel" class="tabContent">
-              <div class="tabSubContent text-padding-60">
-                  <p><h3><strong>Binary options</strong></h3></p>
-                  <p>Options that offer a fixed payout based on a simple yes/no proposition.</p>
+    <div class = "row">
+        <div class = "col-12">
+            <amp-selector role="tablist" layout="container" class="ampTabContainer">
+              <div role="tab" class="tabButton tabHeader  no-outline" selected option="a"><h3 class="remove-outline">Binary Options</h3></div>
+              <div role="tabpanel" class="tabContent">
+                  <div class="tabSubContent text-padding-60">
+                      <p><h3><strong>Binary options</strong></h3></p>
+                      <p>Options that offer a fixed payout based on a simple yes/no proposition.</p>
+                  </div>
+                  <div class="tabSubContent">
+                      <amp-img src= {{ "/assets/img/trade/Binary_image.svg" | prepend: site.github.url | replace: 'http://', 'https://' }} height="175" layout="fixed-height"></amp-img>
+                  </div>
               </div>
-              <div class="tabSubContent">
-                  <amp-img src= {{ "/assets/img/trade/Binary_image.svg" | prepend: site.github.url | replace: 'http://', 'https://' }} height="175" layout="fixed-height"></amp-img>
+              <div role="tab" class="tabButton tabHeader no-outline" option="b"><h3>Forex</h3></div>
+              <div role="tabpanel" class="tabContent">
+                  <div class="tabSubContent text-padding-60">
+                      <p><h3><strong>Forex</strong></h3></p>
+                      <p>Major, minor and exotic currency pairs</p>
+                  </div>
+                  <div class="tabSubContent">
+                      <amp-img src= {{ "/assets/img/trade/Forex_Image.svg" | prepend: site.github.url | replace: 'http://', 'https://' }} height="175" layout="fixed-height"></amp-img>
+                  </div>
               </div>
-          </div>
-          <div role="tab" class="tabButton tabHeader no-outline" option="b"><h3>Forex</h3></div>
-          <div role="tabpanel" class="tabContent">
-              <div class="tabSubContent text-padding-60">
-                  <p><h3><strong>Forex</strong></h3></p>
-                  <p>Major, minor and exotic currency pairs</p>
+              <div role="tab" class="tabButton tabHeader no-outline" option="c"><h3>CFDs</h3></div>
+              <div role="tabpanel" class="tabContent">
+                  <div class="tabSubContent text-padding-60">
+                    <p><h3><strong>CFDs</strong></h3></p>
+                    <p>Derivatives that reflect the movement of underlying assets.</p>
+                  </div>
+                  <div class="tabSubContent">
+                      <amp-img src= {{ "/assets/img/trade/CFDs_Image.svg" | prepend: site.github.url | replace: 'http://', 'https://' }} height="175" layout="fixed-height"></amp-img>
+                  </div>
               </div>
-              <div class="tabSubContent">
-                  <amp-img src= {{ "/assets/img/trade/Forex_Image.svg" | prepend: site.github.url | replace: 'http://', 'https://' }} height="175" layout="fixed-height"></amp-img>
+              <div role="tab" class="tabButton tabHeader no-outline" option="c"><h3>Metals</h3></div>
+              <div role="tabpanel" class="tabContent">
+                  <div class="tabSubContent text-padding-60">
+                    <p><h3><strong>Metal</strong></h3></p>
+                    <p>Precious metal pairs including gold and platinum.</p>
+                  </div>
+                  <div class="tabSubContent">
+                      <amp-img src= {{ "/assets/img/trade/Metals_Image.svg" | prepend: site.github.url | replace: 'http://', 'https://' }} height="175" layout="fixed-height"></amp-img>
+                  </div>
               </div>
-          </div>
-          <div role="tab" class="tabButton tabHeader no-outline" option="c"><h3>CFDs</h3></div>
-          <div role="tabpanel" class="tabContent">
-              <div class="tabSubContent text-padding-60">
-                <p><h3><strong>CFDs</strong></h3></p>
-                <p>Derivatives that reflect the movement of underlying assets.</p>
+              <div role="tab" class="tabButton tabHeader  no-outline" option="c"><h3>Crypto</h3></div>
+              <div role="tabpanel" class="tabContent">
+                  <div class="tabSubContent text-padding-60">
+                    <p><h3><strong>Cryptocurrency</strong></h3></p>
+                    <p>Cryptocurrency pairs including Bitcoin and Ethereum.</p>
+                  </div>
+                  <div class="tabSubContent">
+                      <amp-img src= {{ "/assets/img/trade/Crypto_Image.svg" | prepend: site.github.url | replace: 'http://', 'https://' }} height="175" layout="fixed-height"></amp-img>
+                  </div>
               </div>
-              <div class="tabSubContent">
-                  <amp-img src= {{ "/assets/img/trade/CFDs_Image.svg" | prepend: site.github.url | replace: 'http://', 'https://' }} height="175" layout="fixed-height"></amp-img>
-              </div>
-          </div>
-          <div role="tab" class="tabButton tabHeader no-outline" option="c"><h3>Metals</h3></div>
-          <div role="tabpanel" class="tabContent">
-              <div class="tabSubContent text-padding-60">
-                <p><h3><strong>Metal</strong></h3></p>
-                <p>Precious metal pairs including gold and platinum.</p>
-              </div>
-              <div class="tabSubContent">
-                  <amp-img src= {{ "/assets/img/trade/Metals_Image.svg" | prepend: site.github.url | replace: 'http://', 'https://' }} height="175" layout="fixed-height"></amp-img>
-              </div>
-          </div>
-          <div role="tab" class="tabButton tabHeader  no-outline" option="c"><h3>Crypto</h3></div>
-          <div role="tabpanel" class="tabContent">
-              <div class="tabSubContent text-padding-60">
-                <p><h3><strong>Cryptocurrency</strong></h3></p>
-                <p>Cryptocurrency pairs including Bitcoin and Ethereum.</p>
-              </div>
-              <div class="tabSubContent">
-                  <amp-img src= {{ "/assets/img/trade/Crypto_Image.svg" | prepend: site.github.url | replace: 'http://', 'https://' }} height="175" layout="fixed-height"></amp-img>
-              </div>
-          </div>
-        </amp-selector>
+            </amp-selector>
+        </div>
     </div>
-</div>
-<div class="row" align="center">
-    <div class="col-md-12 border-bottom">
-        <h3 class="center-text max-width-960">Choose from 100+ tradable instruments, backed by award-winning technology and innovation since 2000.</h3>
+    <div class="row" align="center">
+        <div class="col-md-12 bottom-desc">
+            <h3 class="center-text">Choose from 100+ tradable instruments, backed by award-winning technology and innovation since 2000.</h3>
+        </div>
     </div>
 </div>
