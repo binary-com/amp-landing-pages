@@ -71,6 +71,9 @@ amp-selector [option][selected] {
     .text-padding-60 {
         padding: unset;
     }
+}
+
+@media (max-width: 479px) {
     .bottom-desc {
         h3 {
             color: #fff;
