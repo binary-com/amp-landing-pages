@@ -24,7 +24,7 @@
     {%- capture include_to_scssify -%}
     {%- include _sass/main.scss -%}
     {%- endcapture -%}
-    {{ include_to_scssify | scssify }}
+    {{ include_to_scssify | scssify | strip_newlines  }}
     .main-content {
         background-color: #2A3052;
         background-image: url({{ "/assets/img/header-bg.png" | prepend: site.github.url | replace: 'http://', 'https://' }});

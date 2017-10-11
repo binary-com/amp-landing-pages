@@ -53,6 +53,13 @@ p {
     font-weight: 300;
 }
 
+.bg-white {
+    background-color: #FFFFFF;
+}
+.bg-grey {
+    background-color: #F2F2F2;
+}
+
 .white-text {
     color: #FFFFFF;
 }
@@ -88,4 +95,5 @@ hr {
     border-right: 0;
     border-bottom: 0;
     border-top: 5px solid rgb(233,128,36);
+    margin-bottom: 20px;
 }
