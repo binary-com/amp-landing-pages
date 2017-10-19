@@ -1,0 +1,143 @@
+.ampTabContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tabHeader {
+    margin-bottom: 30px;
+}
+
+.tabButton[selected] {
+    border-bottom: 3px solid #2b3050;
+}
+
+.no-outline:focus {
+    outline: none;
+}
+
+.tabButton {
+    width: 20%;
+    list-style: none;
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 2px solid #DEDEDE;
+}
+
+.tabContent {
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    width: 100%;
+    order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
+}
+
+.tabSubContent {
+    p {
+        font-weight: 400;
+    }
+    flex: 4 auto;
+    width: 50%;
+    text-align: left;
+}
+
+.tabButton[selected]+.tabContent {
+    height: unset;
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+amp-selector [option][selected] {
+    outline: 1px solid rgba(255,255,255,0);
+}
+
+.text-padding-60 {
+    padding: 0px 60px;
+}
+
+.bottom-desc {
+    h3 {
+        line-height: 1.4em;
+    }
+}
+
+.footer-separator {
+    border-left: 2px solid #DEDEDE;
+}
+
+.vertical-padding-20 {
+    padding: 20px 0px;
+}
+
+.footer-bottom-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom-left {
+    h3 {
+        line-height: 1.4em;
+    }
+}
+
+.footer-img-container {
+    align-items: center;
+}
+
+.footer-img {
+    margin: auto;
+}
+
+@media (max-width: 767px) {
+    .tabButton {
+        display: none;
+    }
+    .tabButton[selected]+.tabContent, .tabContent {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        height: unset;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #DEDEDE;
+        &:last-child {
+            border: 0;
+        }
+    }
+    .tabSubContent {
+        width: 100%;
+        text-align: center;
+    }
+    .text-padding-60 {
+        padding: unset;
+    }
+    .footer-separator {
+        padding-top: 20px;
+        border-left: 0;
+    }
+    .footer-bottom-right {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 479px) {
+    .footer-img {
+        padding: 0px 5px 20px 5px;
+    }
+    .trade-footer-text {
+        background-color: #2A3052;
+    }
+    .bottom-desc {
+        h3 {
+            color: #fff;
+        }
+        border: 0;
+    }
+    .footer-bottom-left {
+        h3 {
+            border-bottom: 2px solid #DEDEDE;
+            padding-bottom: 20px;
+        }
+    }
+}

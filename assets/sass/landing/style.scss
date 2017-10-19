@@ -53,12 +53,23 @@ p {
     font-weight: 300;
 }
 
+.bg-white {
+    background-color: #FFFFFF;
+}
+.bg-grey {
+    background-color: #F2F2F2;
+}
+
 .white-text {
     color: #FFFFFF;
 }
 
 .center-text {
     text-align: center;
+}
+
+.align-text-left {
+    text-align: left;
 }
 
 .iframe {
@@ -78,10 +89,23 @@ p {
     margin: auto;
 }
 
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
 hr {
     width: 120px;
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
     border-top: 5px solid rgb(233,128,36);
+    margin-bottom: 20px;
 }

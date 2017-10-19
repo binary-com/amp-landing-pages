@@ -1,9 +1,11 @@
 @charset "utf-8";
 
-@import 'bootstrap-amp.min.scss';
+@import 'bootstrap/bootstrap-amp.min.scss';
 
-@import 'symbols.scss';
+@import 'landing/payment-methods.scss';
 
-@import 'style.scss';
+@import 'landing/style.scss';
 
-@import 'media-queries.scss';
+@import 'landing/trade-section.scss';
+
+@import 'landing/media-queries.scss';

@@ -6,11 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Online Trading platform for binary options on Forex, Indices, Commodities and Smart Indices | Binary.com
+title: The Premier Platform for Online Trading | Binary.com
+pr_title: Get Paid for Pull Requests | Binary.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Sign up for a risk-free virtual account and start trading with instant access to $10,000 in virtual funds.
+pr_description: > # this means to ignore newlines until "baseurl:"
+  To encourage transparency and improve the performance and functionality of our website, Binary.com has open-sourced the entire front-end of our codebase, and we are now actively encouraging the community to contribute to its development.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zakibinary.github.io/amp-landing-pages" # the base hostname & protocol for your site
 
